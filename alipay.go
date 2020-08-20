@@ -9,7 +9,6 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"errors"
-	"github.com/smartwalle/crypto4go"
 	"io"
 	"io/ioutil"
 	"math"
@@ -19,6 +18,8 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/smartwalle/crypto4go"
 )
 
 var (
@@ -332,6 +333,15 @@ func (this *Client) doRequest(method string, param Param, result interface{}) (e
 
 func (this *Client) DoRequest(method string, param Param, result interface{}) (err error) {
 	return this.doRequest(method, param, result)
+}
+
+func (this *Client) SignString(s string) (string, error) {
+	sig, err := crypto4go.RSASignWithKey([]byte(s), this.appPrivateKey, crypto.SHA256)
+	if err != nil {
+		return "", err
+	}
+	s = base64.StdEncoding.EncodeToString(sig)
+	return s, nil
 }
 
 func (this *Client) VerifySign(data url.Values) (ok bool, err error) {
