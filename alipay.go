@@ -335,15 +335,6 @@ func (this *Client) DoRequest(method string, param Param, result interface{}) (e
 	return this.doRequest(method, param, result)
 }
 
-func (this *Client) SignString(s string) (string, error) {
-	sig, err := crypto4go.RSASignWithKey([]byte(s), this.appPrivateKey, crypto.SHA256)
-	if err != nil {
-		return "", err
-	}
-	s = base64.StdEncoding.EncodeToString(sig)
-	return s, nil
-}
-
 func (this *Client) VerifySign(data url.Values) (ok bool, err error) {
 	var certSN = data.Get(kCertSNNodeName)
 	publicKey, err := this.getAliPayPublicKey(certSN)
