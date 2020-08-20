@@ -1,5 +1,3 @@
-github.com/smartwalle/crypto4go v1.0.1 h1:nFTWfENt8OTzJIp4Kxil7AhoP0DUCvYuAfPoLpVWDuI=
-github.com/smartwalle/crypto4go v1.0.1/go.mod h1:LQ7vCZIb7BE5+MuMtJBuO8ORkkQ01m4DXDBWPzLbkMY=
 github.com/smartwalle/crypto4go v1.0.2 h1:9DUEOOsPhmp00438L4oBdcL8EZG1zumecft5bWj5phI=
 github.com/smartwalle/crypto4go v1.0.2/go.mod h1:LQ7vCZIb7BE5+MuMtJBuO8ORkkQ01m4DXDBWPzLbkMY=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=

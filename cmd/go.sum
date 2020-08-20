@@ -12,10 +12,10 @@ github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd/go.mod h1:6dJ
 github.com/modern-go/reflect2 v1.0.1/go.mod h1:bx2lNnkwVCuqBIxFjflWJWanXIb3RllmbCylyMrvgv0=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/smartwalle/alipay v1.0.2 h1:y/uC+6OcVDVxKJ5Bs1qi6aogjDEXwD3XswDXJ5zJurk=
-github.com/smartwalle/alipay/v3 v3.1.3 h1:nN0pUWg9DALQ0xSTt4egxkk7NrbNSR46QX5rwZ2jAoI=
-github.com/smartwalle/alipay/v3 v3.1.3/go.mod h1:cZUMCCnsux9YAxA0/f3PWUR+7wckWtE1BqxbVRtGij0=
-github.com/smartwalle/alipay/v3 v3.1.4 h1:KN4bivq2o/FhiRmZZBSwO/Vif27Z8CsboP6KaLYDDxQ=
-github.com/smartwalle/alipay/v3 v3.1.4/go.mod h1:cZUMCCnsux9YAxA0/f3PWUR+7wckWtE1BqxbVRtGij0=
+github.com/sotoup/alipay v3.1.3 h1:nN0pUWg9DALQ0xSTt4egxkk7NrbNSR46QX5rwZ2jAoI=
+github.com/sotoup/alipay v3.1.3/go.mod h1:cZUMCCnsux9YAxA0/f3PWUR+7wckWtE1BqxbVRtGij0=
+github.com/sotoup/alipay v3.1.4 h1:KN4bivq2o/FhiRmZZBSwO/Vif27Z8CsboP6KaLYDDxQ=
+github.com/sotoup/alipay v3.1.4/go.mod h1:cZUMCCnsux9YAxA0/f3PWUR+7wckWtE1BqxbVRtGij0=
 github.com/smartwalle/crypto4go v1.0.2 h1:9DUEOOsPhmp00438L4oBdcL8EZG1zumecft5bWj5phI=
 github.com/smartwalle/crypto4go v1.0.2/go.mod h1:LQ7vCZIb7BE5+MuMtJBuO8ORkkQ01m4DXDBWPzLbkMY=
 github.com/smartwalle/xid v1.0.6 h1:aZ52pzrFSpzg+AIbSsiBxadjAZRctvDSkp5AokOHuFw=
