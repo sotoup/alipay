@@ -186,7 +186,6 @@ func (this *Client) UploadImage(filename string, fp string, result interface{}) 
 type FormDataParam interface {
 	APIName() string
 	Params() map[string]string
-	FormData() map[string]string
 	FormFile() map[string]string
 }
 
@@ -217,11 +216,6 @@ func (this *Client) DoRequestWithFormData(param FormDataParam, result interface{
 		p.Add(key, value)
 	}
 
-	formValues := param.FormData()
-	for k, v := range formValues {
-		p.Add(k, v)
-	}
-
 	psign, err := signWithPKCS1v15(p, this.appPrivateKey, crypto.SHA256)
 	if err != nil {
 		return err
@@ -232,9 +226,6 @@ func (this *Client) DoRequestWithFormData(param FormDataParam, result interface{
 
 	body := &bytes.Buffer{}
 	writer := multipart.NewWriter(body)
-	for k, v := range formValues {
-		writer.WriteField(k, v)
-	}
 
 	formFiles := param.FormFile()
 	for k, v := range formFiles {
